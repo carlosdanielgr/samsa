@@ -1,12 +1,26 @@
 import "./App.css";
-import Cover from "./components/Cover/Cover";
-import Header from "./components/Header/Header";
+import {
+  Header,
+  Cover,
+  OurIdea,
+  CatAnimation,
+  Brands,
+  Advertising,
+  Manifest,
+  Showcases,
+} from "./components";
 
 function App() {
   return (
     <>
       <Header />
       <Cover />
+      <OurIdea />
+      <CatAnimation />
+      <Brands />
+      <Advertising />
+      <Manifest />
+      {/* <Showcases /> */}
     </>
   );
 }

@@ -5,15 +5,32 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #E7EBF6;
+  background-color: #e7ebf6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --text-primary-light: #657690;
+  --primary-dark: #1d2f49;
+}
+
+@font-face {
+  font-family: "Europa-Bold";
+  src: url(./assets/fonts/fonnts.com-Europa_Nuova_Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Europa-Regular";
+  src: url(./assets/fonts/fonnts.com-Europa_Nuova_Regular.ttf)
+    format("truetype");
 }
 
 body {
   margin: 0;
+  font-family: "Europa-Regular", sans-serif;
 }
 
+#root {
+  overflow-x: hidden;
+}

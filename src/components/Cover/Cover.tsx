@@ -5,7 +5,7 @@ const Cover: React.FC = () => {
   return (
     <section className="cover">
       <video
-        // autoPlay
+        autoPlay
         muted
         loop
         preload="auto"

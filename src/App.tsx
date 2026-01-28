@@ -7,7 +7,6 @@ import {
   Brands,
   Advertising,
   Manifest,
-  Showcases,
 } from "./components";
 
 function App() {

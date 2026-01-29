@@ -4,6 +4,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import { gsap } from "gsap";
 import "./Header.scss";
 import { LINKS } from "../../shared/constants/links.constant";
+import logo from "../../../public/logo.png";
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -13,7 +14,7 @@ const Header: React.FC = () => {
     gsap.fromTo(
       linksRef.current,
       { duration: 1, y: -100, opacity: 0, ease: "bounce.out", stagger: 0.2 },
-      { y: 0, opacity: 1 }
+      { y: 0, opacity: 1 },
     );
   }, []);
   useEffect(() => {
@@ -34,7 +35,7 @@ const Header: React.FC = () => {
   }, []);
   return (
     <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
-      <img className="header__logo" src="./src/assets/logo.png" alt="logo" />
+      <img className="header__logo" src={logo} alt="logo" />
       <nav className="header__nav">
         <div className="header__links">
           {Object.entries(LINKS).map(([key, value], i) => (

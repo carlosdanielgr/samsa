@@ -1,5 +1,7 @@
 import React from "react";
 import "./Advertising.scss";
+import nikeVideo from "../../assets/videos/Nike.mp4";
+import nikeWoman from "../../assets/images/Nike_Woman.png";
 
 export const Advertising: React.FC = () => {
   return (
@@ -11,13 +13,9 @@ export const Advertising: React.FC = () => {
         loop
         preload="auto"
         playsInline
-        src="./src/assets/videos/Nike.mp4"
+        src={nikeVideo}
       ></video>
-      <img
-        className="advertising__person"
-        src="./src/assets/images/Nike_Woman.png"
-        alt="Nike Woman"
-      />
+      <img className="advertising__person" src={nikeWoman} alt="Nike Woman" />
     </section>
   );
 };

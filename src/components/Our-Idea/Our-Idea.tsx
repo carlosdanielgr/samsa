@@ -1,5 +1,7 @@
 import React from "react";
 import "./Our-Idea.scss";
+import MoonGradient from "../../assets/images/Moon-Gradient.png";
+import CircleGradient from "../../assets/images/Circle-Gradient.png";
 
 export const OurIdea: React.FC = () => {
   return (
@@ -22,12 +24,12 @@ export const OurIdea: React.FC = () => {
       </div>
       <img
         className="our-idea__moon-gradient"
-        src="./src/assets/images/Moon-Gradient.png"
+        src={MoonGradient}
         alt="Moon Gradient"
       />
       <img
         className="our-idea__circle-gradient"
-        src="./src/assets/images/Circle-Gradient.png"
+        src={CircleGradient}
         alt="Circle Gradient"
       />
     </section>

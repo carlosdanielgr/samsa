@@ -1,5 +1,6 @@
 import React from "react";
 import "./Manifest.scss";
+import ManifestGradient from "../../assets/images/manifest_gradient.png";
 
 export const Manifest: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ export const Manifest: React.FC = () => {
       </div>
       <img
         className="manifest__figure"
-        src="./src/assets/images/manifest_gradient.png"
+        src={ManifestGradient}
         alt="Manifest Gradient"
       />
     </section>
